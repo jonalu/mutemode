@@ -2,9 +2,11 @@
   "name": "mutemode",
   "version": "1.0.0",
   "description": "Official site for the band Mute Mode",
-  "main": "index.js",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [
     "music",
@@ -13,6 +15,7 @@
   "author": "Jonas Lundeland",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0"
   }
 }
