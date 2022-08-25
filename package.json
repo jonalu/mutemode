@@ -6,7 +6,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url ./"
+    "build": "parcel build --public-url ./",
+    "clean:cache": "rm -rf .parcel-cache"
   },
   "keywords": [
     "music",
