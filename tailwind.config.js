@@ -6,7 +6,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'monton': ['"Monoton"', 'cursive'],
+                'monoton': ['"Monoton"', 'cursive'],
                 'coda': ['"Coda"', 'cursive'],
             },
         },
