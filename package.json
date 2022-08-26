@@ -16,9 +16,12 @@
   "author": "Jonas Lundeland",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.7.0",
+    "@parcel/transformer-jsonld": "^2.7.0",
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
     "postcss": "^8.4.16",
+    "sharp": "^0.29.3",
     "tailwindcss": "^3.1.8"
   }
 }
