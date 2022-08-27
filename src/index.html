@@ -67,32 +67,65 @@
 
 <body class="bg-white">
 
-<div class="container mx-auto grid grid-cols-12 py-5">
+<div class="container mx-auto grid grid-cols-12 md:py-5">
 
     <header
-            class="col-span-12 md:col-span-8 md:col-start-3 h-80 bg-contain bg-no-repeat bg-bottom md:bg-center bg-white relative mb-10"
+            class="col-span-12 md:col-span-8 md:col-start-3 h-80 bg-contain bg-no-repeat bg-bottom md:bg-center mb-10"
             style="background-image: url('assets/cover.jpg?as=webp&width=1024')">
+
+
+        <nav class="container flex flex-wrap justify-between items-center mx-auto font-coda bg-white/80 md:bg-inherit">
+            <h1 class="font-monoton text-2xl text-green-800 hover:motion-safe:animate-pulse pl-4 md:pl-0">mute mode</h1>
+            <button onclick="document.getElementById('navbar-default').classList.toggle('hidden'); "
+                    data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-3 ml-3 text-sm md:hidden focus:outline-none focus:text-green-800"
+                    aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col text-right md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li>
+                        <a href="https://instagram.com/mutemodeofficial"
+                           class="block py-2 pr-4 pl-3 underline md:hover:text-green-800 md:p-0">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/MuteModeOfficial"
+                           class="block py-2 pr-4 pl-3 underline md:hover:text-green-800 hover:underline md:p-0">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/2OWVEnynPK5VBZAiYvkfyC"
+                           class="block py-2 pr-4 pl-3 underline md:hover:text-green-800 hover:underline md:p-0">Spotify</a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@mutemode.no"
+                           class="block py-2 pr-4 pl-3 underline md:hover:text-green-800 hover:underline md:p-0">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white"></div>
-        <h1 class="absolute top-0 left-5 font-monoton text-2xl hover:motion-safe:animate-pulse">mute mode</h1>
     </header>
 
-    <main class="col-span-12 md:col-span-8 md:col-start-3 px-5 mb-10">
-        <p class="text-center text-l font-coda text-center leading-8 mb-5 max-w-lg mx-auto">
+    <main class="col-span-12 md:col-span-8 md:col-start-3 px-5">
+        <p class="text-center text-l font-coda text-center leading-8 max-w-lg mx-auto mb-20">
             Mute Mode is a norwegian electronic music duo consisting of Mats Systaddal and John Trygve Mulhearn Evensen.
             Their music is tough and raw and the visual stage show, together with the repetitive
             riff, makes for a hypnotic and physical experience. The Aggressive synths, samplers, drum machines and perc
             provide driving and dirty rhythms.
         </p>
-        <p class="text-center text-l font-coda">
-            Book Mute Mode at <a class="underline" href="mailto:contact@mutemode.no">contact@mutemode.no</a>
-        </p>
-    </main>
 
-    <iframe class="rounded-xl mx-auto col-span-10 col-start-2 md:col-span-8 md:col-start-3"
-            title="Mute Mode Spotify Playlist"
-            src="https://open.spotify.com/embed/artist/2OWVEnynPK5VBZAiYvkfyC?utm_source=generator&theme=1" width="100%"
-            height="80"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe class="rounded-xl mx-auto col-span-10 col-start-2 md:col-span-8 md:col-start-3"
+                title="Mute Mode Spotify Playlist"
+                src="https://open.spotify.com/embed/artist/2OWVEnynPK5VBZAiYvkfyC?utm_source=generator&theme=1" width="100%"
+                height="80"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </main>
 
 </div>
 
