@@ -111,10 +111,10 @@
 
 
         <nav class="pl-5 md:pl-0 pr-2 md:pr-0 container flex flex-wrap justify-between items-center mx-auto font-coda">
-            <h1 class="font-monoton text-2xl text-green-800 hover:motion-safe:animate-pulse">mute mode</h1>
+            <h1 class="font-monoton text-2xl hover:motion-safe:animate-pulse">mute mode</h1>
             <button onclick="document.getElementById('navbar-default').classList.toggle('hidden'); "
                     data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-3 ml-3 text-sm md:hidden focus:outline-none focus:text-green-800"
+                    class="inline-flex items-center p-3 ml-3 text-sm md:hidden"
                     aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -125,33 +125,33 @@
                 </svg>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="flex flex-col text-right md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                    <li class="px-2 md:px-0">
+                <ul class="flex flex-col items-end md:items-center text-right md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li class="flex">
                         <a href="https://instagram.com/mutemodeofficial"
                            title="Visit Mute Mode on Instagram"
-                           class="focus:outline-none focus:ring inline-block h-8 w-8 rounded-full bg-white underline md:hover:text-green-800 md:p-0">
-                            <img class="w-full" src="./assets/instagram.svg" alt="Instagram logo"/>
+                           class="focus:outline-none focus:ring focus:bg-green-200 inline-block rounded-full p-3">
+                            <img class="w-6 h-6" src="./assets/instagram.svg" alt="Instagram logo"/>
                         </a>
                     </li>
-                    <li class="px-2 md:px-0">
+                    <li class="flex">
                         <a href="https://www.facebook.com/MuteModeOfficial"
                            title="Visit Mute Mode on Facebook"
-                           class="focus:outline-none focus:ring inline-block h-8 w-8 rounded-full bg-white underline md:hover:text-green-800 hover:underline md:p-0">
-                            <img class="w-full" src="./assets/facebook.svg" alt="Facebook logo"/>
+                           class="focus:outline-none focus:ring focus:bg-green-200 inline-block rounded-full p-3">
+                            <img class="w-6 h-6" src="./assets/facebook.svg" alt="Facebook logo"/>
                         </a>
                     </li>
-                    <li class="px-2 md:px-0">
+                    <li class="flex">
                         <a href="https://open.spotify.com/artist/2OWVEnynPK5VBZAiYvkfyC"
                            title="Listen to Mute Mode tracks on Spotify"
-                           class="focus:outline-none focus:ring inline-block h-8 w-8 rounded-full bg-white underline md:hover:text-green-800 hover:underline md:p-0">
-                            <img class="w-full" src="./assets/spotify.svg" alt="Spotify logo"/>
+                           class="focus:outline-none focus:ring focus:bg-green-200 inline-block rounded-full p-3">
+                            <img class="w-6 h-6" src="./assets/spotify.svg" alt="Spotify logo"/>
                         </a>
                     </li>
-                    <li class="px-2 md:px-0">
+                    <li class="flex">
                         <a href="mailto:contact@mutemode.no"
                            title="Send Mute Mode an email"
-                           class="focus:outline-none focus:ring inline-block h-8 w-8 rounded-full bg-white underline md:hover:text-green-800 hover:underline md:p-0">
-                            <img class="w-full" src="./assets/email.svg" alt="Email logo"/>
+                           class="focus:outline-none focus:ring focus:bg-green-200 inline-block rounded-full p-3">
+                            <img class="w-6 h-6" src="./assets/email.svg" alt="Email logo"/>
                         </a>
                     </li>
                 </ul>
